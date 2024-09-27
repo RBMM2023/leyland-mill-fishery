@@ -82,7 +82,7 @@ nav li {
   h1 {
     font-size: 40px;
     text-shadow: rgb(139, 138, 138) -14px 11px 3px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 60px;
     color: #ecf0ec;
     font-family: "Varela Round", sans-serif;
