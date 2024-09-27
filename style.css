@@ -180,6 +180,21 @@ article a {
   margin-bottom: 0;
 }
 
+/* Media query for mobile responsiveness */
+@media only screen and (max-width: 768px) {
+  .flexbox {
+    height: auto; /* Allow the footer to adjust in height */
+  }
+
+  .flexbox > .copyright p {
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+
+  .flexbox .tower img {
+    max-height: 15px; /* Reduce image size on smaller screens */
+    max-width: 40px;
+  }
+  
 /* Gallery Styles */
 .gallery {
   display: flex;
