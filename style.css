@@ -182,9 +182,9 @@ article a {
 
 /* Media query for mobile responsiveness */
 @media only screen and (max-width: 768px) {
-  .flexbox {
-    height: auto; /* Allow the footer to adjust in height */
-  }
+  /* .flexbox {
+    height: auto; /* Allow the footer to adjust in height 
+  }*/
 
   .flexbox > .copyright p {
     font-size: 4px; /* Reduce font size for smaller screens */
