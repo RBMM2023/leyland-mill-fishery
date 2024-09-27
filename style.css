@@ -225,7 +225,7 @@ article a {
   }
 
   .flexbox > .copyright p {
-    font-size: 12px; /* Reduce font size for smaller screens */
+    font-size: 10px; /* Reduce font size for smaller screens */
   }
 
   .flexbox .tower img {
