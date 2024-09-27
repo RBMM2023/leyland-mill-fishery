@@ -95,7 +95,7 @@ nav li {
 
   nav ul {
     flex-wrap: wrap;
-    background-color: rgba(204, 210, 214, 0.3);
+    background-color: rgba(204, 210, 214, 0.2);
   }
 
   nav a {
