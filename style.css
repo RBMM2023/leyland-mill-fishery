@@ -1,0 +1,292 @@
+* {
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+
+body {
+  text-align: center;
+  background-color: black;
+}
+
+/*header for all pages*/
+header {
+  background-image: url(./images/lakeView.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: auto;
+  text-wrap: wrap;
+  padding: 10px;
+  opacity: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-shadow: rgb(139, 138, 138) -14px 11px 3px;
+  color: #ecf0ec;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  font-size: 60px;
+  left: 0;
+  top: 0;
+}
+
+nav ul {
+  border-style: solid;
+  border-width: 4px;
+  border-color: #3baa3d;
+  border-left: none;
+  border-right: none;
+  list-style-type: none;
+  background-color: rgba(204, 210, 214, 0.747);
+  padding-left: 2px;
+  padding-right: 2px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+nav a {
+  color: #2eff31;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 26px;
+  text-decoration: none;
+  font-weight: bolder;
+  padding: 2px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 2px;
+  text-overflow: none;
+  color: rgb(242, 238, 238);
+  font-style: italic;
+  font-size: larger;
+}
+
+main {
+  margin-top: 20px;
+  padding-top: 50px;
+}
+
+@media (max-width: 768px) {
+  nav li {
+    padding: 5px; /* Reduce padding for smaller screens */
+  }
+}
+
+/*video and video controls*/
+video {
+  border-radius: 10%;
+  background-color: #0efc425b;
+  max-width: 100%;
+  height: auto;
+}
+
+#playPauseBtn {
+  cursor: pointer;
+}
+
+#fullscreenBtn {
+  cursor: pointer;
+}
+
+#volumeSlider {
+  cursor: grab;
+}
+
+label {
+  color: rgb(44, 202, 26);
+  font-size: 24px;
+}
+
+.volume {
+  border: 1px, white, solid;
+  display: inline-block;
+  background-color: rgb(94, 92, 92);
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.videoBtn {
+  margin: 0 5px; /* Space between buttons */
+  padding: 15px 20px; /* Increase button padding for easier tapping */
+  font-size: 24px; /* Adjust font size for mobile */
+  border: 1px solid red; /* Temporary border for testing */
+  background-color: #056f07; /* Button background color */
+  color: white; /* Button text color */
+  cursor: pointer; /* Pointer cursor for buttons */
+  border-radius: 5px; /* Rounded corners */
+  touch-action: manipulation;
+  min-width: 100px;
+}
+
+.videoBtn:hover {
+  background-color: #2e8a2e; /* Darker green on hover */
+}
+
+/*titles for pages*/
+.title {
+  color: #3baa3d;
+  font-size: 40px;
+  text-decoration: underline;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+/*main write up*/
+article {
+  font-size: 22px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(245, 244, 247);
+  font-style: italic;
+  line-height: 1.3;
+  padding: 40px;
+  text-align: left;
+}
+
+article a {
+  color: rgb(245, 244, 247);
+}
+
+/*footer*/
+.flexbox {
+  background-color: rgb(204, 210, 214);
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+}
+
+.flexbox > .copyright p {
+  font-size: 17px;
+  color: rgb(6, 36, 201);
+  margin-bottom: 0;
+  padding-right: 10px;
+}
+
+.flexbox .tower img {
+  height: auto;
+  max-height: 20px;
+  max-width: 50px;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+/* Gallery Styles */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 100px;
+}
+
+.gallery img {
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery img:hover,
+.gallery img:focus {
+  transform: scale(1.05);
+  outline: 1px solid #00f;
+}
+
+/* Fullscreen Styles */
+.fullscreen-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.fullscreen-image {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  z-index: 1001;
+}
+
+.prev-btn {
+  left: 20px;
+}
+
+.next-btn {
+  right: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 40px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* Accessibility - Focus */
+button:focus {
+  outline: 1px solid #00f;
+}
+
+img:focus {
+  outline: 1px solid #00f;
+}
+
+/*contact us page*/
+.contact ul a {
+  color: white;
+}
+
+.contact li {
+  list-style: none;
+  line-height: 4;
+}
+
+/*video button test*/
+/*.media-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; /* Add some space between video and controls *
+}
+
+/*button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #3baa3d; /* Change to desired color */
+/* color: white;
+  border: none;
+  border-radius: 5px;
+  z-index: 100; /* Ensure it's above other elements 
+}*/

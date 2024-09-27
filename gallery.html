@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Gallery page for Leyland Mill Fishery" />
+    <title>The Lake</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="gallery.js" defer></script>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1><b>Leyland Mill Fishery</b></h1>
+      <nav data-toggle="tab">
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li>Gallery</li>
+          <li><a href="prices.html">Prices</a></li>
+          <li><a href="rules.html">Rules</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="title">
+        <h2>Gallery</h2>
+      </div>
+      <div
+        id="gallery"
+        class="gallery"
+        role="list"
+        aria-label="Image-Gallery"
+      ></div>
+      <!-- Fullscreen Overlay -->
+      <div
+        id="fullscreenOverlay"
+        class="fullscreen-overlay"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="fullscreenImage"
+      >
+        <img
+          id="fullscreenImage"
+          class="fullscreen-image"
+          alt="Full size image"
+        />
+        <button
+          id="prevBtn"
+          class="nav-btn prev-btn"
+          aria-label="Previous Image"
+        >
+          &#10094;
+        </button>
+        <button id="nextBtn" class="nav-btn next-btn" aria-label="Next Image">
+          &#10095;
+        </button>
+        <button id="closeBtn" class="close-btn" aria-label="Close Fullscreen">
+          &times;
+        </button>
+      </div>
+    </main>
+    <footer class="flexbox">
+      <div class="tower">
+        <img src="./images/tower.jpeg" alt="Rupert's Tower" />
+      </div>
+      <div class="copyright">
+        <p>
+          Website designed by Royal Blue Media Machinance © (R.B.M.M)-2024 All
+          rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
