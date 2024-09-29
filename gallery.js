@@ -4,7 +4,7 @@ const imageArray = [
     { src: "./images/carp3.jpg", alt: "Image of third carp" },
     { src: "./images/carp4.jpg", alt: "Image of fourth carp" },
     { src: "./images/carp5.jpg", alt: "Image of fifth carp" },
-    { src: "./images/path.jpg", alt: "Path to peg two and three" },
+    { src: "./images/peg3 view.jpg", alt: "View of lake from peg 3" },
     { src: "./images/image1.jpg", alt: "Set up in snow" },
     { src: "./images/image2.jpg", alt: "Set up in snow" },
     { src: "./images/image3.jpg", alt: "Set up in snow" },
