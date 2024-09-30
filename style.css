@@ -191,7 +191,7 @@ article a {
 
 /*footer*/
 footer {
-  background-color: rgb(204, 210, 214);
+  background-color: rgb(165, 167, 168);
   display: flex;
   flex-direction: column; /* Stack children vertically */
   width: 100%;
@@ -200,7 +200,6 @@ footer {
 }
 
 .flexbox {
-  background-color: rgb(204, 210, 214);
   height: 100px;
   display: flex;
   flex-direction: row;
@@ -249,12 +248,12 @@ footer {
     display: flex; /* Ensure footer uses flexbox */
     flex-direction: column; /* Stack children vertically */
     padding: 20px 0; /* Add more padding for mobile spacing */
-    background-color: rgb(204, 210, 214); /* Keep background color consistent */
+    background-color: rgb(165, 167, 168);
   }
 
   .flexbox {
     height: auto; /* Allow height to adjust based on content */
-    flex-direction: column; /* Stack items vertically on smaller screens */
+    flex-direction: row; /* Stack items vertically on smaller screens */
     align-items: center; /* Center items */
     justify-content: center; /* Center content vertically */
     padding-bottom: 10px; /* Adjust padding for mobile */
