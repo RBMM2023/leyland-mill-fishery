@@ -266,7 +266,7 @@ footer {
   }
 
   .flexbox .tower img {
-    max-height: 15px; /* Reduce image size on smaller screens */
+    max-height: 30px; /* Reduce image size on smaller screens */
     max-width: 40px; /* Keep width proportional */
   }
 
