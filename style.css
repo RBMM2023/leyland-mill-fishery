@@ -446,3 +446,29 @@ img:focus {
   background-color: #f44336;
   color: white;
 }
+
+/* Media query for mobile responsiveness */
+@media only screen and (max-width: 768px) {
+  #cookieModal {
+    padding: 10px; /* Adjust padding for mobile */
+  }
+
+  #cookieModalContent {
+    padding: 15px; /* Less padding on mobile */
+    width: 90%; /* Wider for mobile */
+    max-width: 90%; /* Ensure it doesn't overflow */
+  }
+
+  .modal-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+  }
+
+  .modal-buttons button {
+    width: 100%; /* Make buttons full width on mobile */
+    margin-bottom: 10px; /* Space between buttons */
+  }
+
+  .modal-buttons button:last-child {
+    margin-bottom: 0; /* No margin for the last button */
+  }
+}
