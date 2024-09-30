@@ -266,9 +266,8 @@ footer {
   }
 
   .flexbox .tower img {
-    max-height: 20px; /* Reduce image size on smaller screens */
+    max-height: 15px; /* Reduce image size on smaller screens */
     max-width: 40px; /* Keep width proportional */
-    padding-left: 10px;
   }
 
   .footer-links {
