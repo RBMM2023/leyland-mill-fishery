@@ -226,64 +226,52 @@ footer {
   margin-bottom: 0;
 }
 
-/* Media query for mobile responsiveness
-@media only screen and (max-width: 768px) {
-  .flexbox {
-    height: 40px; /* Allow the footer to adjust in height
-  }
-
-  .flexbox > .copyright p {
-    font-size: 10px; /* Reduce font size for smaller screens
-  }
-
-  .flexbox .tower img {
-    max-height: 15px; /* Reduce image size on smaller screens
-    max-width: 40px;
-  }
+.footer-links a {
+  color: rgb(6, 74, 201);
+  text-decoration: none;
 }
-
 /* Media query for mobile responsiveness */
 @media only screen and (max-width: 768px) {
   footer {
-    display: flex; /* Ensure footer uses flexbox */
-    flex-direction: column; /* Stack children vertically */
-    padding: 20px 0; /* Add more padding for mobile spacing */
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
     background-color: rgb(165, 167, 168);
   }
 
   .flexbox {
-    height: auto; /* Allow height to adjust based on content */
-    flex-direction: row; /* Stack items vertically on smaller screens */
-    align-items: center; /* Center items */
-    justify-content: center; /* Center content vertically */
-    padding-bottom: 10px; /* Adjust padding for mobile */
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
   }
 
   .flexbox > .copyright p {
-    font-size: 14px; /* Slightly smaller font size for mobile */
-    text-align: center; /* Center text */
-    margin: 5px 0; /* Add some margin for spacing */
+    font-size: 14px;
+    text-align: center;
+    margin: 5px 0;
   }
 
   .flexbox .tower img {
-    max-height: 80px; /* Reduce image size on smaller screens */
-    max-width: 60px; /* Keep width proportional */
+    max-height: 80px;
+    max-width: 60px;
   }
 
   .footer-links {
-    font-size: 14px; /* Adjust link size for smaller screens */
-    text-align: center; /* Center the links */
-    margin-top: 10px; /* Space between copyright section and links */
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
   }
 
   .footer-links a {
-    margin: 0 5px; /* Space between links */
-    color: rgb(6, 36, 201); /* Keep link color consistent */
-    text-decoration: none; /* Keep text styling */
+    margin: 0 5px;
+    color: rgb(6, 74, 201);
+    text-decoration: none;
   }
 
   .footer-links a:hover {
-    text-decoration: underline; /* Underline on hover for interaction */
+    text-decoration: underline;
   }
 }
 
