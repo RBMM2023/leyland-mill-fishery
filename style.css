@@ -193,10 +193,10 @@ article a {
 footer {
   background-color: rgb(165, 167, 168);
   display: flex;
-  flex-direction: column; /* Stack children vertically */
+  flex-direction: column;
   width: 100%;
   box-sizing: border-box;
-  padding: 10px 0; /* Add padding for spacing */
+  padding: 10px 0;
 }
 
 .flexbox {
@@ -227,7 +227,7 @@ footer {
 }
 
 .footer-links a {
-  color: rgb(6, 74, 201);
+  color: rgb(0, 18, 151);
   text-decoration: none;
 }
 /* Media query for mobile responsiveness */
@@ -266,7 +266,7 @@ footer {
 
   .footer-links a {
     margin: 0 5px;
-    color: rgb(6, 74, 201);
+    color: rgb(0, 18, 151);
     text-decoration: none;
   }
 
